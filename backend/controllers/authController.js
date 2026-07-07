@@ -4,6 +4,8 @@ const bcrypt = require("bcrypt");
 
 // REGISTER USER
 const register = async (req, res) => {
+      console.log("REGISTER HIT");
+    console.log(req.body);
   try {
     const { name, email, password } = req.body;
 
